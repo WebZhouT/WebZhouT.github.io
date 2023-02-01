@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://webzhout.github.io/newbooks/font/%E9%80%A0%E5%AD%97%E5%B7%A5%E6%88%BF%E5%8F%AF%E5%8F%AF%E4%BD%93.ttf/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="程序员、黑客、Linux之父林纳斯·托瓦兹自传，兴趣引发的操作系统革命  精华笔记  本书主要作者，林纳斯·托瓦兹，是世界顶级黑客之一。他开发出了操作系统Linux，并通过加入开源运动，使Linux成为人类历史上最大的软件协作项目 。 下面，将分三个部分为你讲述本书的主要内容。 第一部分，林纳斯是个怎样的人？十一岁左右，林纳斯一发不可收拾地爱上了计算机。 他找外公讨钱买来了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1259.传记丨《只是为了好玩》：Linux之父林纳斯·托瓦兹自传，兴趣引发的操作系统革命">
+<meta property="og:url" content="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/01/1259.%E4%BC%A0%E8%AE%B0%E4%B8%A8%E3%80%8A%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9%E3%80%8B%EF%BC%9ALinux%E4%B9%8B%E7%88%B6%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9%E8%87%AA%E4%BC%A0%EF%BC%8C%E5%85%B4%E8%B6%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A9%E5%91%BD/2021/01/14/index.html">
+<meta property="og:site_name" content="web周的个人博客">
+<meta property="og:description" content="程序员、黑客、Linux之父林纳斯·托瓦兹自传，兴趣引发的操作系统革命  精华笔记  本书主要作者，林纳斯·托瓦兹，是世界顶级黑客之一。他开发出了操作系统Linux，并通过加入开源运动，使Linux成为人类历史上最大的软件协作项目 。 下面，将分三个部分为你讲述本书的主要内容。 第一部分，林纳斯是个怎样的人？十一岁左右，林纳斯一发不可收拾地爱上了计算机。 他找外公讨钱买来了">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-01/1259.%E4%BC%A0%E8%AE%B0%E4%B8%A8%E3%80%8A%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9%E3%80%8B%EF%BC%9ALinux%E4%B9%8B%E7%88%B6%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9%E8%87%AA%E4%BC%A0%EF%BC%8C%E5%85%B4%E8%B6%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A9%E5%91%BD.webp">
+<meta property="article:published_time" content="2021-01-14T11:23:54.000Z">
+<meta property="article:modified_time" content="2021-01-14T11:23:54.000Z">
+<meta property="article:author" content="web周">
+<meta property="article:tag" content="喜马拉雅">
+<meta property="article:tag" content="传记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-01/1259.%E4%BC%A0%E8%AE%B0%E4%B8%A8%E3%80%8A%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9%E3%80%8B%EF%BC%9ALinux%E4%B9%8B%E7%88%B6%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9%E8%87%AA%E4%BC%A0%EF%BC%8C%E5%85%B4%E8%B6%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A9%E5%91%BD.webp">
+
+<link rel="canonical" href="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/01/1259.%E4%BC%A0%E8%AE%B0%E4%B8%A8%E3%80%8A%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9%E3%80%8B%EF%BC%9ALinux%E4%B9%8B%E7%88%B6%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9%E8%87%AA%E4%BC%A0%EF%BC%8C%E5%85%B4%E8%B6%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A9%E5%91%BD/2021/01/14/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>1259.传记丨《只是为了好玩》：Linux之父林纳斯·托瓦兹自传，兴趣引发的操作系统革命 | web周的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">web周的个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/archives/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/01/1259.%E4%BC%A0%E8%AE%B0%E4%B8%A8%E3%80%8A%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9%E3%80%8B%EF%BC%9ALinux%E4%B9%8B%E7%88%B6%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9%E8%87%AA%E4%BC%A0%EF%BC%8C%E5%85%B4%E8%B6%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A9%E5%91%BD/2021/01/14/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="web周">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web周的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          1259.传记丨《只是为了好玩》：Linux之父林纳斯·托瓦兹自传，兴趣引发的操作系统革命
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-14 19:23:54" itemprop="dateCreated datePublished" datetime="2021-01-14T19:23:54+08:00">2021-01-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">听书笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-01/1259.%E4%BC%A0%E8%AE%B0%E4%B8%A8%E3%80%8A%E5%8F%AA%E6%98%AF%E4%B8%BA%E4%BA%86%E5%A5%BD%E7%8E%A9%E3%80%8B%EF%BC%9ALinux%E4%B9%8B%E7%88%B6%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9%E8%87%AA%E4%BC%A0%EF%BC%8C%E5%85%B4%E8%B6%A3%E5%BC%95%E5%8F%91%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%9D%A9%E5%91%BD.webp"></p>
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://webzhout.github.io/2021newbook/喜马讲书/2021-01/1259.传记丨《只是为了好玩》：Linux之父林纳斯·托瓦兹自传，兴趣引发的操作系统革命.mp3">
+</audio>
+
+<blockquote>
+<p>程序员、黑客、Linux之父林纳斯·托瓦兹自传，兴趣引发的操作系统革命</p>
+</blockquote>
+<p>精华笔记 </p>
+<p>本书主要作者，林纳斯·托瓦兹，是世界顶级黑客之一。他开发出了操作系统Linux，并通过加入开源运动，使Linux成为人类历史上最大的软件协作项目 。</p>
+<p>下面，将分三个部分为你讲述本书的主要内容。</p>
+<h3 id="第一部分，林纳斯是个怎样的人？"><a href="#第一部分，林纳斯是个怎样的人？" class="headerlink" title="第一部分，林纳斯是个怎样的人？"></a><strong>第一部分，林纳斯是个怎样的人？</strong></h3><p>十一岁左右，林纳斯一发不可收拾地爱上了计算机。</p>
+<p>他找外公讨钱买来了第一本电脑书，他还用省下来的零花钱买电脑杂志，拆开计算机看看里面都有什么。</p>
+<p>计算机从此成了林纳斯亲密的生活伴侣，他的生活都围绕着这台普通又神奇的计算机。如果有什么问题没想清楚，林纳斯会废寝忘食地沉思，不放弃任何一个解决方案。他的眼睛会变得发直，听不到周边的人在说什么，也不会回答别人的问题。如果有人打断了他和计算机的交流，林纳斯还会变得非常生气。</p>
+<p>因为这样的投入和坚持，当林纳斯22岁开发出Linux的时候，他其实早已跟计算机打了十几年交道了。</p>
+<h3 id="第二部分，林纳斯能把Linux做成功的三个秘诀是什么？"><a href="#第二部分，林纳斯能把Linux做成功的三个秘诀是什么？" class="headerlink" title="第二部分，林纳斯能把Linux做成功的三个秘诀是什么？"></a><strong>第二部分，林纳斯能把Linux做成功的三个秘诀是什么？</strong></h3><p>第一，林纳斯抓住了外部机遇。当时操作系统的领先者——Unix和BSD陷入了无休止的官司，用户没有便宜、好用又合法的操作系统可用。</p>
+<p>第二， 他把挑战当乐趣，并且行动力超强。</p>
+<p>因为一本名为 《操作系统：设计和实现》的教科书，他开始对操作系统感兴趣。</p>
+<p>凭借一款帮助学生学习Unix的教学软件Minix，他学会了Unix的精华，并将Minix改造成了更方便他使用的版本。</p>
+<p>随着林纳斯添加的功能越来越多，林纳斯开始把自己正在改造的Minix当作一个新的操作系统。</p>
+<p>为了彻底实现这一目标，林纳斯找到了一个Unix操作手册，热心的网友也寄来了几卷厚厚的资料。通过这些材料，他了解了操作系统应该具备哪些功能，又有多少系统呼叫需要实现。随后，林纳斯把参考资料中的系统呼叫一个一个挑出来，然后为每一个系统呼叫编写了程序。1991年9月17日，林纳斯推出了Linux的第一个版本，Linux0.01版，并将它发布在了网上，让别人免费使用和下载。</p>
+<p>第三，他开放的技术观。</p>
+<p>他重视用户的反馈。为了满足一个德国用户的需求，他开发了一个叫“page-to-disk”的新程序。有了这个新程序，用户的小内存也能带动“大”程序，Linux也真正起飞。</p>
+<p>此外，他签署了《GNU通用公共许可协议》。这个协议使得个人或者商家，都可以免费使用Linux的源代码，开发新产品，或者提供软件服务。只要有人买，他们可以卖一块钱，也可以卖一百万。但是，使用者必须以源代码的形式，公布他们对Linux的改动，否则他们将无权对Linux进行复制或从事任何行为。</p>
+<p>林纳斯的这一举动，将Linux和开源运动推向了一个新的高峰。</p>
+<h3 id="第三部分：林纳斯如何面对财富和名望？"><a href="#第三部分：林纳斯如何面对财富和名望？" class="headerlink" title="第三部分：林纳斯如何面对财富和名望？"></a><strong>第三部分：林纳斯如何面对财富和名望？</strong></h3><p>1999年，林纳斯变成了千万富翁。</p>
+<p>2004年，他被《时代周刊》评为世界最有影响力的人之一。</p>
+<p>2003年，林纳斯辞职，致力于Linux和相关开源运动的发展。虽然他和家人们过上了衣食无忧的生活，但是他在本书中一再强调了他的生活哲学，“你可以为事业而奋斗，然而最终，生活的终极目标是快乐。”</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85/" rel="tag"># 喜马拉雅</a>
+              <a href="/tags/%E4%BC%A0%E8%AE%B0/" rel="tag"># 传记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/01/1258.%E5%8E%86%E5%8F%B2%E4%B8%A8%E3%80%8A%E5%8E%86%E5%8F%B2%E4%B8%89%E8%B0%83%E3%80%8B%EF%BC%9A%E4%BA%8B%E4%BB%B6%E3%80%81%E7%BB%8F%E5%8E%86%E5%92%8C%E7%A5%9E%E8%AF%9D%EF%BC%8C%E5%A1%91%E9%80%A0%E5%8E%86%E5%8F%B2%E7%9A%84%E9%80%94%E5%BE%84%E3%80%81%E4%BA%86%E8%A7%A3%E5%8E%86%E5%8F%B2%E7%9A%84%E6%A1%A5%E6%A2%81/2021/01/13/" rel="prev" title="1258.历史丨《历史三调》：事件、经历和神话，塑造历史的途径、了解历史的桥梁">
+      <i class="fa fa-chevron-left"></i> 1258.历史丨《历史三调》：事件、经历和神话，塑造历史的途径、了解历史的桥梁
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/01/1260.%E7%A7%91%E6%99%AE%E4%B8%A8%E3%80%8A%E5%8D%81%E4%BA%BF%E7%BE%8E%E5%85%83%E5%88%86%E5%AD%90%E3%80%8B%EF%BC%9A%E8%8D%AF%E4%BC%81%E5%B7%A8%E5%A4%B4%E2%80%9C%E7%A6%8F%E6%B3%B0%E5%88%B6%E8%8D%AF%E2%80%9D%E7%9A%84%E7%B2%BE%E5%BD%A9%E5%88%9B%E4%B8%9A%E5%8F%B2%EF%BC%8C%E4%BB%8E%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%88%B0%E5%8D%8E%E5%B0%94%E8%A1%97%E7%9A%84%E4%BC%A0%E5%A5%87/2021/01/15/" rel="next" title="1260.科普丨《十亿美元分子》：药企巨头“福泰制药”的精彩创业史，从实验室到华尔街的传奇">
+      1260.科普丨《十亿美元分子》：药企巨头“福泰制药”的精彩创业史，从实验室到华尔街的传奇 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%EF%BC%8C%E6%9E%97%E7%BA%B3%E6%96%AF%E6%98%AF%E4%B8%AA%E6%80%8E%E6%A0%B7%E7%9A%84%E4%BA%BA%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">第一部分，林纳斯是个怎样的人？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%EF%BC%8C%E6%9E%97%E7%BA%B3%E6%96%AF%E8%83%BD%E6%8A%8ALinux%E5%81%9A%E6%88%90%E5%8A%9F%E7%9A%84%E4%B8%89%E4%B8%AA%E7%A7%98%E8%AF%80%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">第二部分，林纳斯能把Linux做成功的三个秘诀是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%9A%E6%9E%97%E7%BA%B3%E6%96%AF%E5%A6%82%E4%BD%95%E9%9D%A2%E5%AF%B9%E8%B4%A2%E5%AF%8C%E5%92%8C%E5%90%8D%E6%9C%9B%EF%BC%9F"><span class="nav-number">3.</span> <span class="nav-text">第三部分：林纳斯如何面对财富和名望？</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="web周"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">web周</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">276</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">web周</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

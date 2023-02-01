@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://webzhout.github.io/newbooks/font/%E9%80%A0%E5%AD%97%E5%B7%A5%E6%88%BF%E5%8F%AF%E5%8F%AF%E4%BD%93.ttf/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="科技极客的思考圣经、科幻作家写作的案头利器  精华笔记《哈利·波特》《星球大战》《三体》，这些虚构作品为我们编织了一个个充满想象力的瑰丽世界，甚至成为了流行文化不可或缺的一部分。不过，在欣赏这些幻想作品的时候，你有没有想过，电影里的魔法符合物理学定律吗？如果你觉得魔法和科学的关系很遥远，那么科幻作品里的各种设定呢？今天我们介绍的这本《巫师、外星人和星舰》试图回答的，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1296.科幻丨《巫师、外星人和星舰》：科技极客的思考圣经、科幻作家写作的案头利器">
+<meta property="og:url" content="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/03/1296.%E7%A7%91%E5%B9%BB%E4%B8%A8%E3%80%8A%E5%B7%AB%E5%B8%88%E3%80%81%E5%A4%96%E6%98%9F%E4%BA%BA%E5%92%8C%E6%98%9F%E8%88%B0%E3%80%8B%EF%BC%9A%E7%A7%91%E6%8A%80%E6%9E%81%E5%AE%A2%E7%9A%84%E6%80%9D%E8%80%83%E5%9C%A3%E7%BB%8F%E3%80%81%E7%A7%91%E5%B9%BB%E4%BD%9C%E5%AE%B6%E5%86%99%E4%BD%9C%E7%9A%84%E6%A1%88%E5%A4%B4%E5%88%A9%E5%99%A8/2021/03/04/index.html">
+<meta property="og:site_name" content="web周的个人博客">
+<meta property="og:description" content="科技极客的思考圣经、科幻作家写作的案头利器  精华笔记《哈利·波特》《星球大战》《三体》，这些虚构作品为我们编织了一个个充满想象力的瑰丽世界，甚至成为了流行文化不可或缺的一部分。不过，在欣赏这些幻想作品的时候，你有没有想过，电影里的魔法符合物理学定律吗？如果你觉得魔法和科学的关系很遥远，那么科幻作品里的各种设定呢？今天我们介绍的这本《巫师、外星人和星舰》试图回答的，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-03/1296.%E7%A7%91%E5%B9%BB%E4%B8%A8%E3%80%8A%E5%B7%AB%E5%B8%88%E3%80%81%E5%A4%96%E6%98%9F%E4%BA%BA%E5%92%8C%E6%98%9F%E8%88%B0%E3%80%8B%EF%BC%9A%E7%A7%91%E6%8A%80%E6%9E%81%E5%AE%A2%E7%9A%84%E6%80%9D%E8%80%83%E5%9C%A3%E7%BB%8F%E3%80%81%E7%A7%91%E5%B9%BB%E4%BD%9C%E5%AE%B6%E5%86%99%E4%BD%9C%E7%9A%84%E6%A1%88%E5%A4%B4%E5%88%A9%E5%99%A8.webp">
+<meta property="article:published_time" content="2021-03-04T11:23:54.000Z">
+<meta property="article:modified_time" content="2021-03-04T11:23:54.000Z">
+<meta property="article:author" content="web周">
+<meta property="article:tag" content="喜马拉雅">
+<meta property="article:tag" content="科幻">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-03/1296.%E7%A7%91%E5%B9%BB%E4%B8%A8%E3%80%8A%E5%B7%AB%E5%B8%88%E3%80%81%E5%A4%96%E6%98%9F%E4%BA%BA%E5%92%8C%E6%98%9F%E8%88%B0%E3%80%8B%EF%BC%9A%E7%A7%91%E6%8A%80%E6%9E%81%E5%AE%A2%E7%9A%84%E6%80%9D%E8%80%83%E5%9C%A3%E7%BB%8F%E3%80%81%E7%A7%91%E5%B9%BB%E4%BD%9C%E5%AE%B6%E5%86%99%E4%BD%9C%E7%9A%84%E6%A1%88%E5%A4%B4%E5%88%A9%E5%99%A8.webp">
+
+<link rel="canonical" href="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/03/1296.%E7%A7%91%E5%B9%BB%E4%B8%A8%E3%80%8A%E5%B7%AB%E5%B8%88%E3%80%81%E5%A4%96%E6%98%9F%E4%BA%BA%E5%92%8C%E6%98%9F%E8%88%B0%E3%80%8B%EF%BC%9A%E7%A7%91%E6%8A%80%E6%9E%81%E5%AE%A2%E7%9A%84%E6%80%9D%E8%80%83%E5%9C%A3%E7%BB%8F%E3%80%81%E7%A7%91%E5%B9%BB%E4%BD%9C%E5%AE%B6%E5%86%99%E4%BD%9C%E7%9A%84%E6%A1%88%E5%A4%B4%E5%88%A9%E5%99%A8/2021/03/04/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>1296.科幻丨《巫师、外星人和星舰》：科技极客的思考圣经、科幻作家写作的案头利器 | web周的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">web周的个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/archives/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/03/1296.%E7%A7%91%E5%B9%BB%E4%B8%A8%E3%80%8A%E5%B7%AB%E5%B8%88%E3%80%81%E5%A4%96%E6%98%9F%E4%BA%BA%E5%92%8C%E6%98%9F%E8%88%B0%E3%80%8B%EF%BC%9A%E7%A7%91%E6%8A%80%E6%9E%81%E5%AE%A2%E7%9A%84%E6%80%9D%E8%80%83%E5%9C%A3%E7%BB%8F%E3%80%81%E7%A7%91%E5%B9%BB%E4%BD%9C%E5%AE%B6%E5%86%99%E4%BD%9C%E7%9A%84%E6%A1%88%E5%A4%B4%E5%88%A9%E5%99%A8/2021/03/04/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="web周">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web周的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          1296.科幻丨《巫师、外星人和星舰》：科技极客的思考圣经、科幻作家写作的案头利器
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-03-04 19:23:54" itemprop="dateCreated datePublished" datetime="2021-03-04T19:23:54+08:00">2021-03-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">听书笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-03/1296.%E7%A7%91%E5%B9%BB%E4%B8%A8%E3%80%8A%E5%B7%AB%E5%B8%88%E3%80%81%E5%A4%96%E6%98%9F%E4%BA%BA%E5%92%8C%E6%98%9F%E8%88%B0%E3%80%8B%EF%BC%9A%E7%A7%91%E6%8A%80%E6%9E%81%E5%AE%A2%E7%9A%84%E6%80%9D%E8%80%83%E5%9C%A3%E7%BB%8F%E3%80%81%E7%A7%91%E5%B9%BB%E4%BD%9C%E5%AE%B6%E5%86%99%E4%BD%9C%E7%9A%84%E6%A1%88%E5%A4%B4%E5%88%A9%E5%99%A8.webp"></p>
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://webzhout.github.io/2021newbook/喜马讲书/2021-03/1296.科幻丨《巫师、外星人和星舰》：科技极客的思考圣经、科幻作家写作的案头利器.mp3">
+</audio>
+
+
+
+
+
+<blockquote>
+<p>科技极客的思考圣经、科幻作家写作的案头利器</p>
+</blockquote>
+<h2 id="精华笔记"><a href="#精华笔记" class="headerlink" title="精华笔记"></a>精华笔记</h2><p>《哈利·波特》《星球大战》《三体》，这些虚构作品为我们编织了一个个充满想象力的瑰丽世界，甚至成为了流行文化不可或缺的一部分。不过，在欣赏这些幻想作品的时候，你有没有想过，电影里的魔法符合物理学定律吗？如果你觉得魔法和科学的关系很遥远，那么科幻作品里的各种设定呢？今天我们介绍的这本《巫师、外星人和星舰》试图回答的，正是这方面的问题。</p>
+<p>全书的主要内容分为四个部分：<strong>哈利·波特物理学、星际旅行、外星人和外星世界</strong>。</p>
+<p>翻开这本书之前，我们需要先强调两件事。第一，无论科幻还是奇幻作品，其中必定有不符合现实科学的地方，也就是存在幻想成分。这本书所讨论的，正是这些幻想成分是否合理；第二，能量和功率这两个概念，是本书所有讨论的基础，也是理解本书内容的关键所在。</p>
+<p>接下来，我们就将用<strong>能量和功率这两把尺子</strong>，去衡量幻想和现实的距离。<strong>从科学的角度来说说，魔法世界和科幻世界里的那些常见设定。</strong></p>
+<p><strong>首先，我们一起走进哈利·波特的魔法世界。分别说说霍格沃茨魔法学校里灯光的功率和魔法里的守恒定律。</strong></p>
+<p>看过哈利·波特系列小说和电影的人，恐怕都对霍格沃茨魔法学校宏伟气派的大厅印象十分深刻。照亮这座大厅的当然不是电灯，而是漂浮在空中的无数蜡烛。那么问题来了，单靠蜡烛，能把这座大厅照得多亮呢？</p>
+<p>通过计算我们发现，蜡烛的发光效率还不到白炽灯的十分之一，LED的百分之一。一座像霍格沃兹大厅这样面积高达几百平方米的大型建筑，接近现代城市里图书馆阅览室的大小，这种场所需要安装的LED灯泡总功率差不多要达到几千瓦，甚至上万瓦。如果换成蜡烛，达到同样的亮度就需要几十万甚至上百万支蜡烛。霍格沃兹的大厅显然装不下这么多蜡烛。</p>
+<p>魔法世界里的变形术和修复术同样违反了两个重要的守恒定律：质量守恒定律和热力学第二定律。不过我们可以大胆地猜测一下：也许魔杖本身是某种能量储存器，变形术中消失的质量以能量的形式储存在魔杖里，可供其他消耗能量的魔法使用，比如说修复术。这样就形成了一个能够说得通的闭环，能量有来处也有去处，也许某位奇幻作家会在新的作品里采用这样的设定。</p>
+<p><strong>说完了哈利·波特的魔法世界，接下来我们走进科幻世界，谈一谈人类进行星际旅行和与外星人相遇的可能性。</strong></p>
+<p>进入太空的方式有很多种，而在科幻的世界里，太空电梯可能是最古老的一种星际旅行方式。那么人类到底能不能修建出直通天空的高塔呢？</p>
+<p>太空电梯的质量中心在地球同步轨道上，整体呈树枝状。那么这根树枝，在低于地球同步轨道的部分，会倾向于往下掉落到地面上；与此同时，高于轨道的部分会倾向于飞向太空远离地球。正是这两股力量互相拉扯，才能使太空电梯维持直立。所以太空电梯的建筑材料必然承受极大的拉力，到底有多大呢？通过数学计算，我们发现，太空电梯内部的拉力比钢材能承受的力差不多要大一万倍。也就是说，这座通天塔绝对不可能是钢筋水泥造出来的。那么其他材料呢？最有可能达成这一目标的是纳米纤维管，但目前性能最优秀的碳纤维，能承受的拉力还是只有太空电梯所需要的百分之一。</p>
+<p>既然星际旅行距离我们还很遥远，那么科幻作品里其他更贴近生活的交通工具呢？比如说飞行汽车。</p>
+<p>虽然科幻作品对汽车做出了很多美好的想象，但实际上，现在的燃油车效率已经达到了理论上限值的近一半，提升空间非常有限。飞行汽车需要消耗的能量远大于陆地上奔跑的车辆，目前的燃油不可能提供这么多能量。顺便说一句，以电池为主要动力的新能源车也无法提供这么多能量。除非汽车供能技术出现质的突破，否则我们距离飞行汽车恐怕还很遥远。</p>
+<p><strong>除了星际旅行和飞行汽车以外，外星人也是科幻作品里最常见的元素之一。</strong>人类在科幻作品中创造出来的外星种族成千上万，而在现实世界里，我们还没有发现外星人存在的任何可靠线索。但是，这个事实不一定意味着外星人在宇宙中就不存在，或者说相当稀少。</p>
+<p>因为人类发明无线电波也不过是一百年前的事，要在这一百年内探测到地球无线电信号，并向我们发出信息，一来一回，他们的星球距离我们就不可能超过50光年。这样一来，如果半径50光年的球体空间内存在我们和对方两个文明，假设银河系是均匀的，文明星球按照大致相当的密度分布，那么整个银河系里会有多少个文明？6400万个文明。</p>
+<p>当然，我们这里采用的计算模型非常简单，而且外星文明的数量越稀少，他们和地球建立联系所需要花费的时间就越长。不过，哪怕迄今还没有外星邻居跟我们打招呼，我们依然有可能在未来发现一个规模超乎想象的星际文明群落。</p>
+<p>那么我们该如何去寻找宇宙邻居呢？这里需要引入一条有趣的“安娜·卡列尼娜”原则：任何没有生命存在的行星都有它的不同特色，而所有能够支持地球式生物存活的行星，基本上都会是一个样子。可以肯定的是，如果真的存在外星人建立的文明世界，那么，那个世界和地球必然存在相当程度的相似之处。</p>
+<p>幻想和现实是一对交相映照的双生子。《巫师、外星人和星舰》这本书所做的，就是让幻想回归现实，回归科学。它是一本科幻与奇幻文化的拓展之书，是创意爱好者的脑洞之书，也是科技极客的思考圣经。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85/" rel="tag"># 喜马拉雅</a>
+              <a href="/tags/%E7%A7%91%E5%B9%BB/" rel="tag"># 科幻</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/03/1295.%E7%BB%8F%E7%AE%A1%E4%B8%A8%E3%80%8A%E6%88%98%E7%95%A5%E6%80%9D%E7%BB%B4%E3%80%8B%EF%BC%9A%E6%AF%94%E5%B0%94%C2%B7%E7%9B%96%E8%8C%A8%E3%80%81%E5%8F%B2%E8%92%82%E5%A4%AB%C2%B7%E4%B9%94%E5%B8%83%E6%96%AF%E3%80%81%E5%AE%89%E8%BF%AA%C2%B7%E6%A0%BC%E9%B2%81%E5%A4%AB%E7%9A%845%E6%9D%A1%E9%95%BF%E8%B5%A2%E6%B3%95%E5%88%99/2021/03/03/" rel="prev" title="1295.经管丨《战略思维》：比尔·盖茨、史蒂夫·乔布斯、安迪·格鲁夫的5条长赢法则">
+      <i class="fa fa-chevron-left"></i> 1295.经管丨《战略思维》：比尔·盖茨、史蒂夫·乔布斯、安迪·格鲁夫的5条长赢法则
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/03/1297.%E5%8E%86%E5%8F%B2%E4%B8%A8%E3%80%8A%E6%AC%A7%E6%B4%B2%E4%B9%8B%E9%97%A8%E3%80%8B%EF%BC%9A2000%E5%B9%B4%E4%B9%8C%E5%85%8B%E5%85%B0%E5%8F%B2%EF%BC%8C%E5%93%88%E4%BD%9B%E4%B9%8C%E5%85%8B%E5%85%B0%E7%A0%94%E7%A9%B6%E9%99%A2%E9%99%A2%E9%95%BF%E4%BB%A3%E8%A1%A8%E4%BD%9C/2021/03/05/" rel="next" title="1297.历史丨《欧洲之门》：2000年乌克兰史，哈佛乌克兰研究院院长代表作">
+      1297.历史丨《欧洲之门》：2000年乌克兰史，哈佛乌克兰研究院院长代表作 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B2%BE%E5%8D%8E%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">精华笔记</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="web周"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">web周</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">276</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">web周</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

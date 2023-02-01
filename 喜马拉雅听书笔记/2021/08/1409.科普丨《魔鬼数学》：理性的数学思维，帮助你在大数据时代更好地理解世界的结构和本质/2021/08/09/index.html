@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://webzhout.github.io/newbooks/font/%E9%80%A0%E5%AD%97%E5%B7%A5%E6%88%BF%E5%8F%AF%E5%8F%AF%E4%BD%93.ttf/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="理性的数学思维，帮助你在大数据时代更好地理解世界的结构和本质  精华笔记如今我们生活在一个大数据时代，数据已经渗透到各行各业，甚至成为重要的生产要素，拥有理性的数学思维变得尤其重要。它能帮助我们从纷繁复杂的日常中看到真相，从而做出更明智的决策。 作者乔丹·艾伦伯格在《魔鬼数学》这本书中，分别从线性、推理、期望值、回归和存在等角度，结合日常生活中的案例来帮助大家更好的理解和">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1409.科普丨《魔鬼数学》：理性的数学思维，帮助你在大数据时代更好地理解世界的结构和本质">
+<meta property="og:url" content="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/08/1409.%E7%A7%91%E6%99%AE%E4%B8%A8%E3%80%8A%E9%AD%94%E9%AC%BC%E6%95%B0%E5%AD%A6%E3%80%8B%EF%BC%9A%E7%90%86%E6%80%A7%E7%9A%84%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BD%A0%E5%9C%A8%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%E6%9B%B4%E5%A5%BD%E5%9C%B0%E7%90%86%E8%A7%A3%E4%B8%96%E7%95%8C%E7%9A%84%E7%BB%93%E6%9E%84%E5%92%8C%E6%9C%AC%E8%B4%A8/2021/08/09/index.html">
+<meta property="og:site_name" content="web周的个人博客">
+<meta property="og:description" content="理性的数学思维，帮助你在大数据时代更好地理解世界的结构和本质  精华笔记如今我们生活在一个大数据时代，数据已经渗透到各行各业，甚至成为重要的生产要素，拥有理性的数学思维变得尤其重要。它能帮助我们从纷繁复杂的日常中看到真相，从而做出更明智的决策。 作者乔丹·艾伦伯格在《魔鬼数学》这本书中，分别从线性、推理、期望值、回归和存在等角度，结合日常生活中的案例来帮助大家更好的理解和">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-08/1409.%E7%A7%91%E6%99%AE%E4%B8%A8%E3%80%8A%E9%AD%94%E9%AC%BC%E6%95%B0%E5%AD%A6%E3%80%8B%EF%BC%9A%E7%90%86%E6%80%A7%E7%9A%84%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BD%A0%E5%9C%A8%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%E6%9B%B4%E5%A5%BD%E5%9C%B0%E7%90%86%E8%A7%A3%E4%B8%96%E7%95%8C%E7%9A%84%E7%BB%93%E6%9E%84%E5%92%8C%E6%9C%AC%E8%B4%A8.webp">
+<meta property="article:published_time" content="2021-08-09T11:23:54.000Z">
+<meta property="article:modified_time" content="2021-08-09T11:23:54.000Z">
+<meta property="article:author" content="web周">
+<meta property="article:tag" content="科普">
+<meta property="article:tag" content="喜马拉雅">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-08/1409.%E7%A7%91%E6%99%AE%E4%B8%A8%E3%80%8A%E9%AD%94%E9%AC%BC%E6%95%B0%E5%AD%A6%E3%80%8B%EF%BC%9A%E7%90%86%E6%80%A7%E7%9A%84%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BD%A0%E5%9C%A8%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%E6%9B%B4%E5%A5%BD%E5%9C%B0%E7%90%86%E8%A7%A3%E4%B8%96%E7%95%8C%E7%9A%84%E7%BB%93%E6%9E%84%E5%92%8C%E6%9C%AC%E8%B4%A8.webp">
+
+<link rel="canonical" href="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/08/1409.%E7%A7%91%E6%99%AE%E4%B8%A8%E3%80%8A%E9%AD%94%E9%AC%BC%E6%95%B0%E5%AD%A6%E3%80%8B%EF%BC%9A%E7%90%86%E6%80%A7%E7%9A%84%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BD%A0%E5%9C%A8%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%E6%9B%B4%E5%A5%BD%E5%9C%B0%E7%90%86%E8%A7%A3%E4%B8%96%E7%95%8C%E7%9A%84%E7%BB%93%E6%9E%84%E5%92%8C%E6%9C%AC%E8%B4%A8/2021/08/09/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>1409.科普丨《魔鬼数学》：理性的数学思维，帮助你在大数据时代更好地理解世界的结构和本质 | web周的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">web周的个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/archives/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2021/08/1409.%E7%A7%91%E6%99%AE%E4%B8%A8%E3%80%8A%E9%AD%94%E9%AC%BC%E6%95%B0%E5%AD%A6%E3%80%8B%EF%BC%9A%E7%90%86%E6%80%A7%E7%9A%84%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BD%A0%E5%9C%A8%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%E6%9B%B4%E5%A5%BD%E5%9C%B0%E7%90%86%E8%A7%A3%E4%B8%96%E7%95%8C%E7%9A%84%E7%BB%93%E6%9E%84%E5%92%8C%E6%9C%AC%E8%B4%A8/2021/08/09/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="web周">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web周的个人博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          1409.科普丨《魔鬼数学》：理性的数学思维，帮助你在大数据时代更好地理解世界的结构和本质
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-09 19:23:54" itemprop="dateCreated datePublished" datetime="2021-08-09T19:23:54+08:00">2021-08-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">听书笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://webzhout.github.io/2021newbook/%E5%96%9C%E9%A9%AC%E8%AE%B2%E4%B9%A6/2021-08/1409.%E7%A7%91%E6%99%AE%E4%B8%A8%E3%80%8A%E9%AD%94%E9%AC%BC%E6%95%B0%E5%AD%A6%E3%80%8B%EF%BC%9A%E7%90%86%E6%80%A7%E7%9A%84%E6%95%B0%E5%AD%A6%E6%80%9D%E7%BB%B4%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BD%A0%E5%9C%A8%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%E6%9B%B4%E5%A5%BD%E5%9C%B0%E7%90%86%E8%A7%A3%E4%B8%96%E7%95%8C%E7%9A%84%E7%BB%93%E6%9E%84%E5%92%8C%E6%9C%AC%E8%B4%A8.webp"></p>
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://webzhout.github.io/2021newbook/喜马讲书/2021-08/1409.科普丨《魔鬼数学》：理性的数学思维，帮助你在大数据时代更好地理解世界的结构和本质.mp3">
+</audio>
+
+
+<blockquote>
+<p>理性的数学思维，帮助你在大数据时代更好地理解世界的结构和本质</p>
+</blockquote>
+<h2 id="精华笔记"><a href="#精华笔记" class="headerlink" title="精华笔记"></a>精华笔记</h2><p>如今我们生活在一个大数据时代，数据已经渗透到各行各业，甚至成为重要的生产要素，拥有理性的数学思维变得尤其重要。它能帮助我们从纷繁复杂的日常中看到真相，从而做出更明智的决策。</p>
+<p>作者乔丹·艾伦伯格在《魔鬼数学》这本书中，分别从线性、推理、期望值、回归和存在等角度，结合日常生活中的案例来帮助大家更好的理解和认识数学思维的力量。本次解读主要围绕前四类数学思维，结合生活总接触到的问题，来帮助大家看清现象背后的本质。</p>
+<h3 id="一件东西有价值就多多益善吗？"><a href="#一件东西有价值就多多益善吗？" class="headerlink" title="一件东西有价值就多多益善吗？"></a><strong>一件东西有价值就多多益善吗？</strong></h3><p>这个问题背后其实就是线性思维。所谓线性思维，就是认为两件事物是等比例关联的。如何判断两个变量是否有线性关系呢？我们可以应用“线性回归”这一统计学方法来分析数据，从而发现可能的线性关系。判断两个变量是否存在线性关系，需要经过严格的推理论证，只要认为某个东西有价值，就多多益善，这种想法是不严谨的。</p>
+<p>大多数人非常习惯于“线性思维”，因为它最简单、也最本能。我们往往不经过理性分析就凭直觉认定某两个变量是线性关系，结果被线性思维误导，得出错误结论。</p>
+<p>经常出现在各种媒体的数字游戏，就是盲目地使用了线性换算。美国乔治敦大学反恐专家丹尼尔·毕曼在《外交》杂志发表文章：“据以色列军方报告，2000年至2005年的第二次巴勒斯坦大起义纷争中，有1074个以色列人死亡，7520人受伤,相当于有5万个美国人死亡、30万个美国人受伤。”阿拉伯裔记者阿迈德·摩尔在《洛杉矶时报》上撰文指出：“在2008年底3个月的‘铸铅行动’中，以色列人打死了1400个巴勒斯坦人，相当于杀死了30万个美国人。” </p>
+<p>这里很明显是作者为了强调自己的立场，而诱使读者被线性思维所误导。事实上，战争牺牲人数是由各种因素综合决定的，和一个国家的总人口数没有线性关系，也无法进行等比例换算。这种“按照比例换算”的线性思维非常容易导致谬误。</p>
+<h3 id="为什么成功者的经验难以复制？"><a href="#为什么成功者的经验难以复制？" class="headerlink" title="为什么成功者的经验难以复制？"></a><strong>为什么成功者的经验难以复制？</strong></h3><p>能够成功的在某个领域出类拔萃，本身就是小概率事件，我们很容易陷入 “幸存者偏差”误区。</p>
+<p>幸存者偏差，指的是当取得信息的渠道仅来自于幸存者时，此时的信息可能会与实际情况存在偏差。最初是由美国哥伦比亚大学统计学教授亚伯拉罕·瓦尔德在二战时发现并提出的，著名的“消失的弹孔”的故事，很好的回答了为什么成功者的经验难以复制的问题。因为我们没能听到看到那些失败者的经验，因此并没有全面的看待整个事情，更别提理性的分析了。如果盲目地学习效仿，忽略你未曾获取的信息，往往会导致视角偏差，得出错误结论。</p>
+<p>幸存者偏差让我们只关注到局部的数据，忽略全局。如果幸存者的数据被刻意呈现出来，那就可能让人走进统计学的圈套。在当下这个信息快速传播的大数据时代，很容易利用大量数据主动制造出幸存者，让人们只看到局部，从而轻易相信所谓的真相。股票经纪人通过海量的推送预测涨跌信息，从而使得小部分人认为他具有超强的理财能力，就是利用真实的信息，在大量的数据基础上迷惑部分人得出错误的结论。。</p>
+<p>面对数据的分析，我们必须小心翼翼地利用概率思维来全面地思考和评估，避免因为遗漏了某种“小概率”的假设，导致一叶障目，不见泰山。</p>
+<h3 id="怎么判断彩票值不值得买？"><a href="#怎么判断彩票值不值得买？" class="headerlink" title="怎么判断彩票值不值得买？"></a><strong>怎么判断彩票值不值得买？</strong></h3><p>这个问题背后的本质是“期望值”理论。如果你做了一个试验，试验中每次可能结果的发生概率乘以这个结果的总和，就是期望值。你在做选择时，计算一下期望值，就可以判断这件事情值不值得做。</p>
+<p>那如何判断彩票值不值得买呢？我们计算一下彩票的期望值，假设发行方共发售500万张彩票，每张2元，只有一张可以获奖，奖金是600万元，那么这个彩票的期望值就是中奖的概率乘以奖金值，每张彩票的期望值是1.2元。也就是说你花了2元，购买了期望值为1.2元的彩票，当然不是特别的明智。但是有没有可能期望值是大于彩票面额呢？有的，美国历史上曾经出现过其他玩法的彩票，在奖金累积到足够多时，期望值就会超过彩票价格，麻省理工的一些高材生就发现了这个漏洞，并且大赚特赚。</p>
+<p>当然了，现在肯定不存在这种有漏洞的彩票了，那为什么还是有那么多人购买彩票呢？美国经济学家弗里德曼和萨维奇给出了一个新的理论：衡量彩票的收益不再只是考虑客观上的金钱，而是效用。同样的 100 元，对于不同的人来说效用是不一样的。对于有些人，这是足以让人心动的一个数目，对于另一些人，可能微不足道，损失几乎为 0，但是一旦中大奖，会直接进入一个新的人生阶段。</p>
+<p>“彩票到底值不值得买”这类的判断和选择题很常见，我们不仅要计算收益的数学期望值，同时也要结合自身情况去衡量收益效用，做出最适合自己的选择。</p>
+<h3 id="为什么天才会生出平庸的孩子？"><a href="#为什么天才会生出平庸的孩子？" class="headerlink" title="为什么天才会生出平庸的孩子？"></a><strong>为什么天才会生出平庸的孩子？</strong></h3><p>这个问题背后的本质是“回归效应”：只要研究对象受到随机性的影响，就会发生回归平均值的现象。孩子的身高、智商、天赋等都逃脱不了回归效应。</p>
+<p>那么回归效应跟遗传学岂不是自相矛盾么？我们到底还受不受遗传基因的影响呢？英国科学家弗朗西斯·高尔顿深入研究发现，遗传还是影响我们的，虽然我们每个人身上的特质受到随机性的影响，但是每个人所受的随机力的大小是不同的，高尔顿提出了变量之间“相关系数“的概念。相关系数就越高，意味着遗传因素的作用越大。反之，回归效应就起到了决定性的作用。相关系数的应用并不仅限于遗传研究领域，随着更深入的研究发现，只要两个变量彼此之间可能有关系，就可以用相关系数来分析。</p>
+<p>现在你明白了吗？欧洲杯前几场比赛表现优异的足球运动员，在后面的比赛表现平平，这并不完全是因为运动员的能力只是昙花一现，而是运动员跟所有人一样，他们的表现是天赋与运气共同作用的结果，也会受到回归效应的影响。至于影响到什么程度，那就要看他的才华和运气之间的相关系数了。</p>
+<p>数学思维的力量，能够帮助我们更好的看清事物的本质。警惕“线性思维”陷阱，规避大数据时代海量信息的误导；“概率思维”提醒我们在机会足够多的情况下，不可能的事情也会发生，帮助我们更透彻的分析现象背后的本质；在面对机会和选择时，我们要理性地计算收益“期望值”，并结合自身的收益效用，做出最明智的决定；“回归效应”使我们在面对世间百态时，在多维的世界中保持一份理性。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%A7%91%E6%99%AE/" rel="tag"># 科普</a>
+              <a href="/tags/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85/" rel="tag"># 喜马拉雅</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E7%BA%AA%E5%BD%95%E7%89%87/10.%E9%A9%BB%E9%A2%9C%E5%A5%A5%E7%A7%98/2021/08/08/" rel="prev" title="10.驻颜奥秘">
+      <i class="fa fa-chevron-left"></i> 10.驻颜奥秘
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E7%BA%AA%E5%BD%95%E7%89%87/11.%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%98%E5%BE%97%E8%BF%99%E4%B9%88%E8%83%96%EF%BC%9F/2021/08/09/" rel="next" title="11.我们为什么变得这么胖？">
+      11.我们为什么变得这么胖？ <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B2%BE%E5%8D%8E%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">精华笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BB%B6%E4%B8%9C%E8%A5%BF%E6%9C%89%E4%BB%B7%E5%80%BC%E5%B0%B1%E5%A4%9A%E5%A4%9A%E7%9B%8A%E5%96%84%E5%90%97%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">一件东西有价值就多多益善吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%90%E5%8A%9F%E8%80%85%E7%9A%84%E7%BB%8F%E9%AA%8C%E9%9A%BE%E4%BB%A5%E5%A4%8D%E5%88%B6%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">为什么成功者的经验难以复制？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%8E%E4%B9%88%E5%88%A4%E6%96%AD%E5%BD%A9%E7%A5%A8%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%B9%B0%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">怎么判断彩票值不值得买？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A9%E6%89%8D%E4%BC%9A%E7%94%9F%E5%87%BA%E5%B9%B3%E5%BA%B8%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%9F"><span class="nav-number">1.4.</span> <span class="nav-text">为什么天才会生出平庸的孩子？</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="web周"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">web周</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">276</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">web周</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
